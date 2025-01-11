@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/flower-icon.png" type="image/x-icon">
+  <title>Rania's Magical Garden 🌹🌷</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, rgba(255, 248, 230, 0.9), rgba(245, 235, 250, 0.9));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('images/rnia.jpg'); /* Replace with a tulip and rose field */
+      background-size: cover;
+      background-position: center;
+      filter: brightness(75%);
+      z-index: -1;
+      animation: zoom 20s infinite;
+    }
+
+    @keyframes zoom {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 4.5rem;
+      color: #ff4081;
+      margin: 0;
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #ff6b6b, 0 0 20px #ff6b6b, 0 0 30px #ff6b6b;
+      }
+      to {
+        text-shadow: 0 0 20px #ff9999, 0 0 30px #ff9999, 0 0 40px #ff9999;
+      }
+    }
+
+    p {
+      font-size: 1.4rem;
+      color: #fff;
+      margin: 20px 30px;
+      max-width: 800px;
+      line-height: 1.8;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 3s ease-in;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 40px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      background: #ff6b6b;
+      border-radius: 50px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: fadeIn 4s ease-in;
+    }
+
+    .btn:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 10px 20px rgba(255, 105, 135, 0.5);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      color: #fff;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+      width: 100%;
+      text-align: center;
+      animation: fadeIn 5s ease-in;
+    }
+
+    .petal {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: pink;
+      border-radius: 50%;
+      animation: fall 6s linear infinite;
+      opacity: 0.7;
+    }
+
+    .petal:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .petal:nth-child(2) { left: 20%; animation-delay: 2s; }
+    .petal:nth-child(3) { left: 30%; animation-delay: 4s; }
+    .petal:nth-child(4) { left: 50%; animation-delay: 1s; }
+    .petal:nth-child(5) { left: 70%; animation-delay: 3s; }
+    .petal:nth-child(6) { left: 90%; animation-delay: 5s; }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-100%) rotate(0deg);
+      }
+      100% {
+        transform: translateY(110vh) rotate(360deg);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Background -->
+  <div class="background"></div>
+
+  <!-- Falling Petals -->
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+
+  <!-- Title Section -->
+  <h1>Welcome to Rania's Magical Garden 🌹</h1>
+  <p>
+    "Dear Rania,<br>
+    There are stars in the night sky, but none shine as brightly as the light you bring into the world. Your amber eyes are windows to a soul so warm, so kind, and so rare that they leave every heart they touch forever changed. 🌟🌹<br><br>
+    In this magical garden, every petal tells a story—of laughter, love, and the beauty you’ve sown in the hearts of those lucky enough to know you. You are more than a memory, more than a dream—you are a masterpiece painted with the colors of kindness, grace, and courage. 🌷✨<br><br>
+    Rania, may this space remind you, not just today but always, of how extraordinary you are. You are not just loved; you are cherished beyond words, a gift the world is grateful for every single day. The universe is brighter because you exist. 💖"
+  </p>
+
+  <!-- Button -->
+  <a href="flower.html" class="btn">
+    🌸 Discover More Magic
+  </a>
+
+  <!-- Footer -->
+  <footer>Made with endless love 💕 just for Rania</footer>
+</body>
+
+</html>
